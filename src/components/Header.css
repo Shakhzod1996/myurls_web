@@ -1,0 +1,279 @@
+.header {
+    width: 100%;
+    display: flex;
+    background-color: #fff;
+    transition: all .4s ease;
+    z-index: 777;
+}
+
+
+.logo-a {
+    text-decoration: none;
+}
+
+.header-fixed {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 80px;
+    box-shadow: 0 0 5px #888;
+    background-color: #fff;
+}
+
+.container {
+    width: 96%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: auto;
+    padding: 15px 0;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.circle {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: rgb(123, 121, 255);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.fa-link {
+    font-size: 25px;
+    color: #fff;
+}
+
+.my {
+    margin-left: 10px;
+    font-size: 32px;
+    font-weight: 800;
+    color: rgb(49, 48, 102);
+}
+
+.urls {
+    color: rgb(123, 121, 255);
+}
+
+.main-menu {
+    display: flex;
+    align-items: center;
+}
+
+.main-menu li {
+    list-style-type: none;
+
+}
+
+.menu ul {
+    display: flex;
+}
+
+.menu ul li {
+    margin-right: 30px;
+}
+
+.menu ul li a {
+    color: #000;
+    transition: all .4s ease;
+    text-decoration: none;
+    font-size: 17px;
+    position: relative;
+}
+
+.menu ul li a:hover {
+    color: #7979ff;
+}
+
+.menu ul li a::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    height: 2px;
+    width: 0;
+    transition: all .4s ease;
+    background-color: #7979ff;
+}
+
+.menu ul li a:hover::before {
+    width: 100%;
+}
+
+.signs ul {
+    display: flex;
+    width: 250px;
+    justify-content: space-between
+}
+
+.signs ul li:first-child {
+    /* margin-right: 14px; */
+    padding: 10px 30px;
+    background-color: #dedeff;
+    color: #7979ff;
+    border-radius: 35px;
+    transition: all .4s ease;
+}
+
+.signs ul li:first-child:hover {
+    background-color: #c5c5ec;
+}
+
+.signs ul li:nth-child(2) {
+    background-color: #7979ff;
+    color: #fff;
+    /* margin-right: 15px; */
+    padding: 10px 30px;
+    border-radius: 35px;
+    transition: all .4s ease;
+}
+
+.signs ul li:nth-child(2):hover {
+    background-color: #414191;
+}
+
+.signs ul li a {
+    text-decoration: none;
+    font-size: 16px;
+    border-radius: 35px;
+}
+
+.log-in {
+    color: #7979ff;
+}
+
+.sign-up {
+    color: #fff;
+}
+
+.toggle-btn {
+    display: none;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    font-size: 28px;
+    color: #777;
+    transition: all .4s ease;
+    align-items: center;
+    justify-content: center;
+    margin-left: 20px;
+    cursor: pointer;
+}
+
+
+.toggle-btn:hover {
+    background-color: rgb(231, 231, 231);
+}
+
+.toggle-btn:hover i {
+    color: #7979ff;
+}
+
+.close {
+    display: none;
+}
+
+@media (max-width: 768px) {
+    .main-menu {
+        position: fixed;
+        top: -100%;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.911);
+        z-index: 55;
+        display: block;
+        text-align: center;
+        transition: all .4s ease;
+    }
+
+    .close {
+        display: block;
+        position: absolute;
+        top: 30px;
+        right: 30px;
+        color: #fff;
+        cursor: pointer;
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        transition: all .4s ease;
+    }
+
+    .close:hover {
+        background-color: rgb(255, 255, 255);
+    }
+
+    .close:hover i {
+        color: #7979ff;
+    }
+
+    .close i {
+        font-size: 25px;
+        transition: all .4s ease;
+    }
+
+    .main-menu-active {
+        top: 0;
+        position: fixed;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.959);
+        z-index: 55;
+        display: block;
+        text-align: center;
+        transition: all .4s ease;
+
+    }
+
+    .menu {
+        margin-top: 100px;
+        margin-bottom: 30px;
+    }
+
+    .menu ul {
+        display: block;
+    }
+
+    .menu ul li {
+        margin-bottom: 15px;
+        margin-right: 0;
+    }
+
+    .menu ul li a {
+        color: #fff;
+        font-size: 25px;
+    }
+
+    .signs ul {
+        display: block;
+        width: 100%;
+    }
+
+    .signs ul li {
+        width: 200px;
+        text-align: center;
+        margin: auto;
+        margin-bottom: 20px;
+        cursor: pointer;
+    }
+
+    .signs ul li a {
+        text-decoration: none;
+    }
+
+    .toggle-btn {
+        display: flex;
+    }
+    
+}

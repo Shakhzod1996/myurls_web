@@ -1,0 +1,139 @@
+.login {
+    height: calc(100vh - 80px);
+    width: 100%;
+}
+
+.login-container {
+    width: 40%;
+    margin: 0 auto;
+}
+
+.a-first {
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+}
+
+.circle-1 {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: rgb(123, 121, 255);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 10px;
+}
+
+.m-b {
+    margin-bottom: 15px;
+}
+
+.circle-1 i {
+    font-size: 20px;
+}
+
+.myurls {
+    font-size: 30px;
+    font-weight: 800;
+    color: rgb(49, 48, 102);
+}
+
+.myurls span {
+    color: rgb(123, 121, 255);
+}
+
+.login-main {
+    padding: 15px;
+    border-radius: 5px;
+    border: 1px solid rgb(230, 230, 230);
+    box-shadow: 0 0 3px rgb(233, 230, 230);
+    color: #7373aa;
+}
+
+.login-main h2 {
+    margin-top: 15px;
+    margin-bottom: 15px;
+    font-size: 20px;
+    font-weight: 400;
+    color: #7373aa;
+}
+
+hr {
+    width: 100%;
+    border: none;
+    height: 1px;
+    background-color: rgb(230, 230, 230);
+    margin-bottom: 20px;
+}
+
+.block {
+    display: block;
+}
+
+#email {
+    margin-bottom: 30px;
+    margin-top: 10px;
+    width: 100%;
+    padding: 13px;
+    border-radius: 5px;
+    border: 1px solid rgb(230, 230, 230);
+    outline: none;
+    
+}
+
+#password {
+    margin-top: 10px;
+    width: 100%;
+    padding: 13px;
+    border-radius: 5px;
+    border: 1px solid rgb(230, 230, 230);
+    outline: none;
+}
+
+.secondhr {
+    margin-top: 20px;
+}
+
+.sign-in {
+    padding: 14px 40px;
+    width: 90%;
+    cursor: pointer;
+    border-radius: 30px;
+    border: none;
+    margin-left: 5%;
+    background-color: rgb(123, 121, 255);
+    color: #fff;
+    font-size: 20px;
+    font-weight: 500;
+    transition: .4s ease;
+}
+
+.sign-in:hover {
+    
+    background-color: rgb(110, 107, 252);
+}
+
+.account {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.account a {
+    text-decoration: none;
+    padding: 5px;
+    color: #bbbbf5;
+    transition: all .4s ease;
+}
+
+.account a:hover {
+    color: #7373aa;
+}
+
+@media(max-width: 568px) {
+    .login-container {
+        width: 70%;
+    }
+}

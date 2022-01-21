@@ -1,0 +1,84 @@
+#password {
+    margin-bottom: 30px;
+}
+
+.user {
+    width: 100%;
+    /* padding: 13px; */
+    border-radius: 5px;
+    border: 1px solid rgb(230, 230, 230);
+    display: flex;
+    align-items: center;
+    color: #000;
+    background-color: rgb(245, 243, 243);
+    margin-top: 10px;
+}
+
+.sign-container {
+    width: 40%;
+    margin: 0 auto;
+}
+
+.user p {
+    margin-left: 10px;
+    height: 100%;
+}
+
+.user input {
+    width: 100%;
+    outline: none;
+    padding: 15px;
+    border: none;
+}
+
+.sign-Up {
+    width: 90%;
+    padding: 15px;
+    border-radius: 30px;
+    border: none;
+    margin-left: 5%;
+    cursor: pointer;
+    background-color: rgb(123, 121, 255);
+    color: #fff;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.clicking {
+    margin-top: 15px;
+    text-align: center;
+    font-size: 12px;
+    color: #999;
+}
+
+.clicking a {
+    color: #666;
+    text-decoration: none;
+    transition: all .4s ease;
+}
+
+.clicking a:hover {
+    color: #999;
+}
+
+.all {
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.all a {
+    text-decoration: none;
+    color: #999;
+}
+
+@media (max-width: 568px) {
+    .sign-container {
+        width: 70%;
+    }
+
+    .all {
+        margin-top: 40px;
+        margin-bottom: 40px;
+    }
+}
